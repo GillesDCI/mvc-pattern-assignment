@@ -55,25 +55,34 @@ Before starting run `npm install` to install all the required packages.
 - `bookedUntil` - Date
 
 
-## Task 3 - Customer endpoints
+## Task 3 - Creating and configuring controllers
 
+### 1. Customer controller
+  1. Create a new `customerController.js` file inside the controllers folder. 
+ 
+  2. import the `customerController` inside the customerRoutes. 
+
+### 2. Hotel controller
+  1. Create a new `hotelController.js` file inside the controllers folder. 
+ 
+  2. import the `hotelController` inside the hotelRoutes. 
+
+### 3. Reservation controller
+  1. Create a new `reservationController.js` file inside the controllers folder. 
+ 
+  2. import the `reservationController` inside the customerRoutes. 
+
+
+
+
+
+
+
+  3. Use the `create` or `save` method to create a new customer in the database. 
   1. Create a new `post` endpoint `/create` in `customerRoutes`. 
 
-  2. Use the `create` method to create a new customer in the database. 
 
-> Example using save
 
->
->```javascript
->const tea = new Tea({ name: 'Sencha', type: 'GREENTEA' });
->await tea.save();
->   ```
-
-Example using create
-
- ```javascript
-const tea = await Tea.create({ name: 'Sencha', type: 'GREENTEA' });
-   ```
 
 ## Task 4 - Get list of products  (READ)
   1. Create a new `get` endpoint `/list` in `productsRoutes`. 
