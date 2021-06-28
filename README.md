@@ -126,3 +126,12 @@ Before starting run `npm install` to install all the required packages.
    ```
 
 
+
+# Bonus: 
+Add a roomSchema, one hotel can have multiple rooms. Upon making a reservation the user has to select a room. 
+Make sure to check whether the room is still available during this period. 
+
+# Part 2 : 
+
+
+
