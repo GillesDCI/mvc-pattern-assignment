@@ -31,14 +31,14 @@ Before starting run `npm install` to install all the required packages.
 
 ## Task 2 - Creating our schemas
 
-### 1. Create a new CustomerSchema with the following fields: 
+### 1. Create a new `CustomerSchema` with the following fields: 
 
 - `firstname` - String
 - `lastname` - String 
 - `username` - String
 - `createdDate` - Date
 
-### 2. Create a new HotelSchema with the following fields: 
+### 2. Create a new `HotelSchema` with the following fields: 
 
 - `name` - String
 - `Address` - String 
@@ -47,7 +47,7 @@ Before starting run `npm install` to install all the required packages.
 - `Price` - Number
 - `hasParking` - Boolean
 
-### 3. Create a new ReservationSchema with the following fields: 
+### 3. Create a new `ReservationSchema` with the following fields: 
 
 - `customerId` - ObjectID
 - `hotelId` - ObjectID
@@ -55,9 +55,9 @@ Before starting run `npm install` to install all the required packages.
 - `bookedUntil` - Date
 
 
-## Task 3 - Create a new 
+## Task 3 - Customer endpoints
 
-  1. Create a new `post` endpoint `/create` in `productsRoutes`. 
+  1. Create a new `post` endpoint `/create` in `customerRoutes`. 
 
   2. Use the `create` or  `save` method to create a new product in the database. 
 
@@ -96,50 +96,3 @@ Example using findById
 const tea = await Tea.findById('dsf5464sdsms5d');
    ```
 
-## Task 6 - Get products by category (READ)
-  1. Create a new `get` endpoint `/category/:category` in `productsRoutes`. 
-
-  2. Use the `find` method to return the products with the category specified in the parameters. 
-
-Example using find 
-
- ```javascript
-const teas = await Tea.find({ type: 'GREENTEA' });
-   ```
-
-## Task 7 - Update category of product by id (UPDATE)
-  1. Create a new `put` endpoint `/update/category/:id` in `productsRoutes`. 
-
-  2. Use the `findByIdAndUpdate` method to update the product 
-
-Example using findByIdAndUpdate 
-
- ```javascript
-const tea = await Tea.findByIdAndUpdate('dfsdfqsfdsfqsd', { type: 'BLACKTEA' });
-   ```
-
-
-
-## Task 8 - Delete one product by name  (DELETE)
-  1. Create a new `delete` endpoint `/delete/:name` in `productsRoutes`. 
-
-  2. Use the `findOneAndDelete` method to delete the product 
-
-Example using findOneAndDelete 
-
- ```javascript
-const teas = await Tea.findOneAndDelete({ name: 'Sencha' });
-   ```
-
-
-## Task 9 - Delete all products by category  (DELETE)
-  1. Create a new `delete` endpoint `/delete/category/:category` in `productsRoutes`. 
-
-  2. Use the `deleteMany` method to delete the product 
-
-Example using deleteMany 
-
- ```javascript
-const resultDelete = await Tea.deleteMany({ type: 'GREENTEA' });
-
-   ```

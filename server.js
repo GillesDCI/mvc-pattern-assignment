@@ -1,13 +1,18 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const productsRoutes = require('./Routes/productsRoutes');
+const customerRoutes = require('./routes/customerRoutes');
+const hotelRoutes = require('./routes/hotelRoutes')
+const reservationRoutes = require('./routes/reservationRoutes');
+
 
 const app = express();
 
 dotenv.config();
 
-//app.use('/api/products', productsRoutes);
+app.use('/api/customers', customerRoutes);
+app.use('/api/hotels', hotelRoutes);
+app.use('/api/reservations', reservationRoutes);
 
 
 mongoose
