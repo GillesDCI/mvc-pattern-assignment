@@ -33,26 +33,26 @@ Before starting run `npm install` to install all the required packages.
 
 ### 1. Create a new CustomerSchema with the following fields: 
 
-- firstname - String
-- lastname - String 
-- username - String
-- createdDate - Date
+- `firstname` - String
+- `lastname` - String 
+- `username` - String
+- `createdDate` - Date
 
 ### 2. Create a new HotelSchema with the following fields: 
 
-- name - String
-- Address - String 
-- City - String
-- Country - String
-- Price - Number
-- hasParking - Boolean
+- `name` - String
+- `Address` - String 
+- `City` - String
+- `Country` - String
+- `Price` - Number
+- `hasParking` - Boolean
 
 ### 3. Create a new ReservationSchema with the following fields: 
 
-- customerId ObjectID
-- hotelId  ObjectID
-- bookedForm - Date 
-- bookedUntil - Date
+- `customerId` - ObjectID
+- `hotelId` - ObjectID
+- `bookedForm` - Date 
+- `bookedUntil` - Date
 
 
 ## Task 3 - Create a new 
