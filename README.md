@@ -59,14 +59,15 @@ Before starting run `npm install` to install all the required packages.
 
   1. Create a new `post` endpoint `/create` in `customerRoutes`. 
 
-  2. Use the `create` or  `save` method to create a new product in the database. 
+  2. Use the `create` method to create a new customer in the database. 
 
-Example using save
+> Example using save
 
- ```javascript
-const tea = new Tea({ name: 'Sencha', type: 'GREENTEA' });
-await tea.save();
-   ```
+>
+>```javascript
+>const tea = new Tea({ name: 'Sencha', type: 'GREENTEA' });
+>await tea.save();
+>   ```
 
 Example using create
 
