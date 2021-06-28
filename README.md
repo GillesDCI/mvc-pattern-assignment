@@ -86,32 +86,43 @@ Before starting run `npm install` to install all the required packages.
  
  Example of wiring a controller method: 
  ```javascript
-  const controller = require('../controllers/orderController');
+  const controller = require('../controllers/orderController'); 
 
   router.get('/', controller.getOrders);
    ```
 
+## Task 6 - Hotel Controller
+  1. Create a new controller method `createHotel()` and add the logic to create a new hotel.
+  2. Create a new controller method `getHotels()` and add the logic to list all hotels from the database.
 
-
-## Task 4 - Get list of products  (READ)
-  1. Create a new `get` endpoint `/list` in `productsRoutes`. 
-
-  2. Use the `find` method to get return a list of all products in the database. 
-
-Example using find
-
+## Task 7 - Wire the controller methods to the Hotel routes
+ 1. Wire the createHotel method to a `POST` endpoint `/create` inside the hotelRoutes. 
+ 2. Wire the getHotels method to a `GET` endpoint `/list` inside the hotelRoutes. 
+ 
+ Example of wiring a controller method: 
  ```javascript
-const teas = await Tea.find(); // all the teas
+  const controller = require('../controllers/orderController'); 
+
+  router.get('/', controller.getOrders);
    ```
 
-## Task 5 - Get product by id (READ)
-  1. Create a new `get` endpoint `/:id` in `productsRoutes`. 
+## Task 8 - Reservation Controller
+  1. Create a new controller method `createReservation()` and add the logic to create a new reservation. 
+   - Make sure to validate whether the `hotelId` and `customerId` exists in the database.
 
-  2. Use the `findById` method to return the product with the id specified in the parameters. 
 
-Example using findById
+  2. Create a new controller method `getReservations()` and add the logic to list all reservations from the database.
 
+
+## Task 9 - Wire the controller methods to the Reservation routes
+ 1. Wire the createReservation method to a `POST` endpoint `/create` inside the reservationRoutes. 
+ 2. Wire the getReservations method to a `GET` endpoint `/list` inside the reservationRoutes. 
+ 
+ Example of wiring a controller method: 
  ```javascript
-const tea = await Tea.findById('dsf5464sdsms5d');
+  const controller = require('../controllers/orderController'); 
+
+  router.get('/', controller.getOrders);
    ```
+
 
