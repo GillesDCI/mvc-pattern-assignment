@@ -14,6 +14,7 @@ This project will allow you to practise using:
 This project assumes you've already had experience with:
 
 > - Routing Express
+> - CRUD Operations
 > - MongoDB Schemas
 > - Using Schema references
 
@@ -70,17 +71,25 @@ Before starting run `npm install` to install all the required packages.
 ### 3. Reservation controller
   1. Create a new `reservationController.js` file inside the controllers folder. 
  
-  2. import the `reservationController` inside the customerRoutes. 
+  2. import the `reservationController` inside the reservationRoutes. 
 
 
 
+## Task 4 - Customer Controller
+  1. Create a new controller method `createCustomer()` and add the logic to create a new customer.
+  2. Create a new controller method `getCustomers()` and add the logic to list all customers from the database.
 
 
+## Task 5 - Wire the controller methods to the Customer routes
+ 1. Wire the createCustomer method to a `POST` endpoint `/create` inside the customerRoutes. 
+ 2. Wire the getCustomers method to a `GET` endpoint `/list` inside the customerRoutes. 
+ 
+ Example of wiring a controller method: 
+ ```javascript
+  const controller = require('../controllers/orderController');
 
-
-  3. Use the `create` or `save` method to create a new customer in the database. 
-  1. Create a new `post` endpoint `/create` in `customerRoutes`. 
-
+  router.get('/', controller.getOrders);
+   ```
 
 
 
