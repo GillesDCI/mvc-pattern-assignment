@@ -52,7 +52,7 @@ Before starting run `npm install` to install all the required packages.
 
 - `customerId` - ObjectID
 - `hotelId` - ObjectID
-- `bookedForm` - Date 
+- `bookedFrom` - Date 
 - `bookedUntil` - Date
 
 
@@ -131,7 +131,7 @@ Before starting run `npm install` to install all the required packages.
 Add a roomSchema, one hotel can have multiple rooms. Upon making a reservation the user has to select a room. 
 Make sure to check whether the room is still available during this period. 
 
-# Part 2 : 
+
 
 
 
